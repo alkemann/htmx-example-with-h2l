@@ -5,25 +5,15 @@ $VENDOR_PATH = $ROOT . 'vendor' . DIRECTORY_SEPARATOR;
 // ***********
 
 require_once($VENDOR_PATH . 'autoload.php');
+require_once($ROOT . 'config' . DIRECTORY_SEPARATOR . 'environments.php');
+require_once($ROOT . 'config' . DIRECTORY_SEPARATOR . 'routes.php');
 
-use alkemann\h2l\{ Environment, Dispatch };
-
-Environment::set([
-    Environment::DEV => [
-        'debug' => true,
-        'content_path' => $ROOT . 'content' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR,
-    ],
-    Environment::PROD => [
-        'debug' => false,
-        'content_path' => $ROOT . 'content' . DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR,
-    ]
-], Environment::ALL);
-
-alkemann\h2l\Router::alias('/', 'home.html');
-
-$dispatch = new Dispatch($_REQUEST, $_SERVER, $_GET, $_POST);
+$dispatch = new alkemann\h2l\Dispatch($_REQUEST, $_SERVER, $_GET, $_POST);
 $dispatch->setRouteFromRouter();
+$dispatch->registerMiddle(...alkemann\h2l\Environment::middlewares());
+
 $response = $dispatch->response();
 if ($response) {
     echo $response->render();
 }
+
