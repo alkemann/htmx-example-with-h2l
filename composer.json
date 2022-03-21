@@ -1,0 +1,19 @@
+{
+    "name": "alkemann/htmx",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Alkemann\\Htmx\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexander Morland",
+            "email": "alek.morland@gmail.com"
+        }
+    ],
+    "require": {
+        "alkemann/h2l": "dev-php80",
+        "alkemann/debug": "^0.4.0"
+    }
+}

@@ -1,0 +1,127 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "7c6d5a20b1863ea7cc8b16ad7ccfb1df",
+    "packages": [
+        {
+            "name": "alkemann/debug",
+            "version": "v0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alkemann/debug.git",
+                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alkemann/debug/zipball/98cb0638ba39e396d3807acfc85060063e0dd788",
+                "reference": "98cb0638ba39e396d3807acfc85060063e0dd788",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/functions.php"
+                ],
+                "psr-4": {
+                    "alkemann\\debug\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Morland",
+                    "email": "alek.morland@gmail.com"
+                }
+            ],
+            "description": "Debug tool for dumping data, prettily",
+            "support": {
+                "issues": "https://github.com/alkemann/debug/issues",
+                "source": "https://github.com/alkemann/debug/tree/v0.4"
+            },
+            "time": "2017-08-11T13:51:28+00:00"
+        },
+        {
+            "name": "alkemann/h2l",
+            "version": "dev-php80",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alkemann/h2l.git",
+                "reference": "f00862dd72546e01907a43a6637db328d24bd154"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/f00862dd72546e01907a43a6637db328d24bd154",
+                "reference": "f00862dd72546e01907a43a6637db328d24bd154",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mongodb/mongodb": "^1.8",
+                "phpstan/phpstan": "^0.12.4",
+                "phpunit/phpunit": "^9"
+            },
+            "suggest": {
+                "alkemann/debug": "Convenient var_dump replaces for debug and development, require-dev only",
+                "ext-curl": "For remote API usage",
+                "ext-mongo": "For the MongoDb Datasource. ",
+                "ext-pdo": "For the MySql, Postgres and Sqlite Datasources.",
+                "mongodb/mongodb": "A Mongo DB data connection is provided that uses this library",
+                "monolog/monolog": "Advanced logging that can be plugged into the logger"
+            },
+            "bin": [
+                "bin/skeleton",
+                "bin/testh2l"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "alkemann\\h2l\\": "src/",
+                    "alkemann\\h2l\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Morland",
+                    "homepage": "https://github.com/alkemann"
+                }
+            ],
+            "description": "A micro framework for websites and apis. This is a sequel of h.l, made for PHP 7",
+            "homepage": "https://github.com/alkemann/h2l",
+            "keywords": [
+                "PHP7",
+                "framework",
+                "microframework",
+                "router",
+                "routing"
+            ],
+            "support": {
+                "issues": "https://github.com/alkemann/h2l/issues",
+                "source": "https://github.com/alkemann/h2l/tree/php80"
+            },
+            "time": "2022-02-24T21:34:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "alkemann/h2l": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
