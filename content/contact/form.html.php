@@ -1,5 +1,10 @@
 
-<form hx-post="/contact/<?=$id?>" hx-target="this" hx-swap="outerHTML">
+<form method="POST" action="/contact/<?=$id?>"
+      hx-post="/contact/<?=$id?>"
+      hx-target="this"
+      hx-swap="outerHTML"
+      hx-push-url="/contact/<?=$id?>"
+      >
   <div>
     <label>First Name</label>
     <input type="text" name="firstName" value="<?=$person['firstName']?>">

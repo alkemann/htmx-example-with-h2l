@@ -3,8 +3,9 @@ body {
 	margin: 0;
 }
 header, article, footer {
-	max-width: 720px;
+	max-width: 400px;
 	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 }
 
@@ -13,9 +14,13 @@ article {
 	border: 1px dashed #ddd;
 	padding: 2em;
 }
-article .content {
+article #content {
 	text-align: left;
 
+}
+
+h2 {
+	margin: 0 auto 1em;
 }
 
 footer {

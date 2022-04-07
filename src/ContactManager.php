@@ -9,16 +9,26 @@ class ContactManager
 
 	private static $data = [
 		1 => [
+			'id' => 1,
 			'firstName' => 'Joe',
 			'lastName' => 'Smith',
 			'email' => 'joe@example.com'
 		],
 		2 => [
+			'id' => 2,
 			'firstName' => 'Ola',
 			'lastName' => 'Normann',
 			'email' => 'ola@example.com'
 		],
 	];
+
+	public static function list(): array
+	{
+		return array_reduce(static::$data, function($out, $one) {
+			$out[$one['id']] = $one['firstName'] . ' ' . $one['lastName'];
+			return $out;
+		}, []);
+	}
 
 	public static function get($id): array|null
 	{
