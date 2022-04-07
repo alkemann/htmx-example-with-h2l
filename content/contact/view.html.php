@@ -4,7 +4,6 @@
 <div><label>Email</label>: <?=$person['email']?></div>
 <div><a class="btn btn-primary"
         href="/contact/<?=$id?>/edit"
-        hx-get="/contact/<?=$id?>/edit"
+        hx-boost="true"
         hx-target="#content"
-        hx-push-url="/contact/<?=$id?>/edit"
     >Edit</a></div>

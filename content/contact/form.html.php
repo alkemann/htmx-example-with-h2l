@@ -1,10 +1,8 @@
 
 <form method="POST" action="/contact/<?=$id?>"
-      hx-post="/contact/<?=$id?>"
-      hx-target="this"
-      hx-swap="outerHTML"
+      hx-target="#content"
       hx-push-url="/contact/<?=$id?>"
-      >
+      hx-boost="true">
   <div>
     <label>First Name</label>
     <input type="text" name="firstName" value="<?=$person['firstName']?>">
@@ -17,6 +15,6 @@
     <label>Email Address</label>
     <input type="email" name="email" value="<?=$person['email']?>">
   </div>
-  <button class="btn">Submit</button>
-  <button class="btn" hx-get="/contact/<?=$id?>">Cancel</button>
+  <a class="btn" href="/contact/<?=$id?>">Cancel</a> |
+    <input type="submit" name="Submit" />
 </form>
