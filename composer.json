@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "alkemann/h2l": "dev-php80",
+        "alkemann/h2l": "^0.64",
         "alkemann/debug": "^0.4.0"
     }
 }

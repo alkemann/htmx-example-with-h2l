@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c6d5a20b1863ea7cc8b16ad7ccfb1df",
+    "content-hash": "35a4ae103d1e8f0a1f2e317aa04fce7f",
     "packages": [
         {
             "name": "alkemann/debug",
@@ -48,33 +48,29 @@
         },
         {
             "name": "alkemann/h2l",
-            "version": "dev-php80",
+            "version": "v0.64.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/alkemann/h2l.git",
-                "reference": "f00862dd72546e01907a43a6637db328d24bd154"
+                "reference": "fc28b6b13ed428b4f02ecb2acd6efdd167b2e6ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alkemann/h2l/zipball/f00862dd72546e01907a43a6637db328d24bd154",
-                "reference": "f00862dd72546e01907a43a6637db328d24bd154",
+                "url": "https://api.github.com/repos/alkemann/h2l/zipball/fc28b6b13ed428b4f02ecb2acd6efdd167b2e6ef",
+                "reference": "fc28b6b13ed428b4f02ecb2acd6efdd167b2e6ef",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0"
+                "php": "^8.1"
             },
             "require-dev": {
-                "mongodb/mongodb": "^1.8",
                 "phpstan/phpstan": "^0.12.4",
                 "phpunit/phpunit": "^9"
             },
             "suggest": {
                 "alkemann/debug": "Convenient var_dump replaces for debug and development, require-dev only",
                 "ext-curl": "For remote API usage",
-                "ext-mongo": "For the MongoDb Datasource. ",
-                "ext-pdo": "For the MySql, Postgres and Sqlite Datasources.",
-                "mongodb/mongodb": "A Mongo DB data connection is provided that uses this library",
-                "monolog/monolog": "Advanced logging that can be plugged into the logger"
+                "ext-pdo": "For the MySql, Postgres and Sqlite Datasources."
             },
             "bin": [
                 "bin/skeleton",
@@ -97,31 +93,29 @@
                     "homepage": "https://github.com/alkemann"
                 }
             ],
-            "description": "A micro framework for websites and apis. This is a sequel of h.l, made for PHP 7",
+            "description": "A micro framework for websites and apis. This is a sequel of h.l, made for PHP 8",
             "homepage": "https://github.com/alkemann/h2l",
             "keywords": [
-                "PHP7",
                 "framework",
                 "microframework",
+                "php8",
                 "router",
                 "routing"
             ],
             "support": {
                 "issues": "https://github.com/alkemann/h2l/issues",
-                "source": "https://github.com/alkemann/h2l/tree/php80"
+                "source": "https://github.com/alkemann/h2l/tree/v0.64.0"
             },
-            "time": "2022-02-24T21:34:00+00:00"
+            "time": "2022-07-24T13:06:28+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "alkemann/h2l": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -21,7 +21,8 @@ alkemann\h2l\Environment::set([
 ], alkemann\h2l\Environment::ALL);
 
 require_once($ROOT . 'config' . DIRECTORY_SEPARATOR . 'middlewares.php');
-require_once($ROOT . 'config' . DIRECTORY_SEPARATOR . 'routes.php');
+
+\alkemann\h2l\Router::addViaAttributes([\app\ContactController::class]);
 
 $dispatch = new alkemann\h2l\Dispatch($_REQUEST, $_SERVER, $_GET, $_POST);
 $dispatch->setRouteFromRouter();
